@@ -32,7 +32,7 @@ def getUser(user_id: int, resp: Response, dependencies: dict = Depends(dependenc
         # On finishing any required business logic, return 200 and user obj
         resp.status_code = 200
         # Re-serialise on return
-        return jsonpickle.decode(user.toJSON())
+        return jsonpickle.decode(user.to_json())
 
 
     except ServiceUnavailableException as e:
