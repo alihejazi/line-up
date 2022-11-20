@@ -1,4 +1,4 @@
-# Very simple wa to demonstrate dependency injection
+# Very simple way to demonstrate dependency injection
 from services.user_service import UserService
 
 async def dependencies():
