@@ -3,7 +3,6 @@ import jsonpickle
 from models.user import User
 from models.error_response import ErrorResponse
 from exceptions.service_unavailable_exception import ServiceUnavailableException
-# from services.user_service import UserService
 from dependencies import dependencies
 
 # Run the app
@@ -29,7 +28,7 @@ def getUser(user_id: int, resp: Response, dependencies: dict = Depends(dependenc
 
         # Do whatever business logic needed on User here...
 
-        # On finishing any required business logic, return 200 and user obj
+        # On finishing any required business logic, return 200 and user object
         resp.status_code = 200
         # Re-serialise on return
         return jsonpickle.decode(user.to_json())
