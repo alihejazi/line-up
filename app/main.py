@@ -11,7 +11,7 @@ app = FastAPI()
 
 # Here we could, if needed, add middleware to make our API much more relaible, secure, and stable.
 # For example CORS rules, rate limiting middleware, JWT authentication middleware, etc. Due to time
-# time-limitations I have not been able to implement any middleware in this submission, but I am
+# time-limitations I have not been able to implement much middleware in this submission, but I am
 # commenting here to demonstrate knowledge.
 # app.add_middleware(...)
 app.add_middleware(
